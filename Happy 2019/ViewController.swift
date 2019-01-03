@@ -69,40 +69,34 @@ class ViewController: UIViewController {
         updateUI();
         
         switch sender.direction.rawValue {
-            case 1:
+        case 1:
             mainLabel.text = "Welcome to 2019!";
-            askDate.isHidden = false;
-            date.isHidden = false;
-            beforeCount.isHidden = false;
-            case 2:
-            mainLabel.text = "Live long and prosper!";
-            askDate.isHidden = false;
-            date.isHidden = false;
-            beforeCount.isHidden = false;
-            case 4:
-            askDate.isHidden = false;
-            date.isHidden = false;
-            beforeCount.isHidden = false;
-            mainLabel.text = "There are "
-            case 8:
-            mainLabel.text = " Seize The Day ";
-            askDate.isHidden = false;
-            date.isHidden = false;
-            beforeCount.isHidden = false;
-            default:
-            mainLabel.text = " unreacognized direction ";
             
-            }
+        case 2:
+            mainLabel.text = "Live long and prosper!";
+            
+        case 4:
+            mainLabel.text = "There are "
+            
+        case 8:
+            mainLabel.text = " Seize The Day ";
+            
+        default:
+            mainLabel.text = " unreacognized direction ";
+        }
         
-        
-  /**
-    @IBAction func swipeUp(_ sender: UISwipeGestureRecognizer) {
-        print("swipeUp");
-        lightOn = !lightOn;
-        mainLabel.text = "Live long and prosper!";
-        updateUI();
- **/
+        askDate.isHidden = false;
+        date.isHidden = false;
+        beforeCount.isHidden = false;
     }
+    
+    /**
+     @IBAction func swipeUp(_ sender: UISwipeGestureRecognizer) {
+     print("swipeUp");
+     lightOn = !lightOn;
+     mainLabel.text = "Live long and prosper!";
+     updateUI();
+     **/
   
     
     func updateUI(){
